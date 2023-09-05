@@ -1,0 +1,170 @@
+/*Alinhando o titilo do site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/*Acrescentando uma nova fonte do fonts.google.com, para estilizar o site*/
+header, /*Acrescentadno a fonte em todo texto h1*/
+section h2, /*Acrescentadno a fonte em todo texto h2*/
+section h3, /*Acrescentadno a fonte em todo texto h3*/
+form button { /*Acrescentando a fonte em todo texto no botão*/
+    font-family: 'Bungee', cursive;
+    font-weight: normal; /*Deixando a fonte normal, porque ela fica muito grosseira*/
+}
+
+/*Estilizando de forma geral a fonte do site, todo que estiver no BODY será dessa fonte aplicada*/
+body,
+input,
+textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Estilizando o cabeçalho*/
+header {
+    padding: 16px 0; /*Espaçamento interno de 16px e 0 nas laterais*/
+    background-color: #182c61; /*Cor de fundo*/
+    color: #ecf0f1;
+     /*Cor do texto no cabeçalho*/
+}
+
+/*Estilizando o Menu, colocando os links um do lado do outro*/
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 16px; /*aumentando o tamanho da fonte do Menu*/
+}
+
+/*Para alterar a cor do link, tenho que colocolar a letrar 'a' depois de li*/
+header nav li a { 
+    color: #ecf0f1;
+    text-decoration: none; /*Removendo a linhas que fica debaixo do link do menu*/
+}
+
+/*Estilizando meu Container que criei no html*/
+.container {
+    max-width: 1280px; /*Largura máxima*/
+    width: 100%; /*Largura, ele vai ocupa 100% da largura até chegar em 1280px*/
+    margin: 0 auto; /*Para centralizar, e nas margens colocamos 'auto'*/
+}
+
+/*Colocando o Menu e o titulo do site lado a lado*/
+header .container, /*Acrescentando uma vígurla ',' depois de .container, posso acrescentar uma seção para alinhar o texto ao lado da imagem o site, em precisar criar uma nova header*/
+section .container { /*Criando uma seção para alinhar o texto do lado da imagem*/
+    display: flex;
+    align-items: center; /*centralizando o menu na vertical do titulo do site Games Shop*/
+    justify-content: space-between; /*Colocando o menu na extrema direita da página*/
+}
+
+/*Na minha Brand-list, estou informando que as imagens devem ter um tamanho específico*/
+.brand-list img { 
+    height: 24px; /*Tamanho que eu quero da imagem no site*/
+}
+
+/*Colocando os itens da lista das logos na mesma linha*/
+.brand-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+/*Colocando o texto na parte superior da imagem principal, pois ele está centralizado devido ao comando anterior que colocamos 'align-items: center' acima*/
+section .container {
+    align-items: start;
+}
+
+/*Colocando espaçamento nas imagens, parágrafos, título etc.*/
+section {
+    padding: 24px 0;
+}
+/*Editando o título do parágrafo colocando espaçamento*/
+section h2 {
+    margin-bottom: 16px;
+}
+
+/*Colocando cor no texto do parágrafo e em todo o texto*/
+section {
+    color: #182c61;
+}
+
+/*Editando o parágrafo do site colocado espaçamento*/
+section p {
+    margin-bottom: 8px;
+}
+
+/*Editando a imagem do site colocado espaçamento entre a imagem e o texto sem alterar o espaçamento das outras imagens*/
+.store-front { /*Criei uma Class no html em img,*/
+    margin-right: 32px;
+}
+
+/*Reduzinho o tamanho das imagnes das redes sociais, crei uma class no li das imagens*/
+.social-links img {
+    height: 24px;
+}
+
+/*Ajustando os links das redes sociais para ficar um do lado do outro*/
+.social-links li {
+    display: inline;
+    margin-right: 8px; /*Adicionando uma margem na direita dos elementos*/
+}
+
+/*Removendo uma pequena linha que fica abaixo das imagens das redes sociais devido a função 'Textdecoration'*/
+.social-links li a {
+    text-decoration: none;
+}
+
+/*Colocando o 'fale conosco' fora da lista li*/
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between; /*Colocando um espaco entre as subseções, ou seja, afastadno cada seção e deixando alinhadas*/ 
+}
+
+/*Colocando os Contatos um debaixo do outro e alinhando*/
+form input,
+textarea,
+button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+/*Retirando a função de reduzir ou aumentar o textarea(caixinha que o usuário escreve)*/
+form textarea {
+    resize: none;
+    height: 180px; /*Almentando a textarea(onde o usuário estreve algum comentário)*/
+}
+
+/*Colocando margem nos títulos, afastando o titulo das informações abaixo*/
+section h3 {
+    margin-bottom: 16px;
+}
+
+/*Colocando cor de fundo no botão do formulário 'Enviar'*/
+form button {
+    background-color: #182c61;
+    color: #ecf0f1; /*Alterando a cor do nome 'Enviar'*/
+    border: none; /*Removendo borda negra do botão*/
+    cursor: pointer; /*Mudando o cursor do mouse de SETA para Mãozinha*/
+}
+
+/*Alterando a cor do botão quando o mouse passar por cima do botão*/
+form button:hover {
+    background-color: #314e9e;
+}
+
+/*Deixando os quadrados da text area em evidência quando forem selecionados*/
+input:focus, textarea:focus {
+    outline: #182c61;
+}
+
+/*Alterando a cor do rodapé*/
+footer {
+    background-color: #182c61;
+    color: #ecf0f1; /*Cor do texto*/
+    padding: 16px 0; /*Tamanho*/
+}

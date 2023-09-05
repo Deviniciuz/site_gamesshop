@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--Alterando o idioma-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Shop - A sua Loja de Games</title> 
+    <link rel="stylesheet" href="./main.css"> <!--Anexando o CSS ao HTML--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container"> <!--Criando o Container (coloca um .container e aperta enter), serve para centralizar o conteúdo, e fazer a distribuição do título do site na esquerda e do Menu na direita*/-->
+            <h1>Games Shop</h1> <!--Titulo principal da página-->
+            <nav> <!--Cria um Menu-->
+                <ul> <!--Colocar um ponto na frente do nome -->
+                    <li> <!--Adicionar os intens da lista que está sendo criada-->
+                        <a href="#about">Sobre a Loja</a> <!--Serve para criar um link-->
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about"> <!--Seção onde irá constar a imagem e informações do da loja com parágrafos-->
+        <div class="container"> <!--Mesmo container que foi criando no header-->
+            <img class="store-front" src="./Foto da Loja de Games.jpg" alt="Fachada da loja Games Shop" /> <!--inserindo uma imagem na tela do site. Criei uma class para separar a imagem do texto no site, sem altear o espaçamento das outras imagens-->
+            <div> <!--DIV criada para colocar um container de texto-->
+                <h2>Sobre a Loja</h2> <!--Título do parágrafo-->
+                <p> <!--Essa Tag serve para criar um parágrafo-->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos asperiores delectus, dolorem itaque atque autem exercitationem sapiente non id necessitatibus minima deserunt, nam accusamus nostrum quia reiciendis eveniet est ratione?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione nobis deserunt, tenetur, praesentium autem necessitatibus consequatur harum eveniet eligendi obcaecati error iste magni totam labore ad quas, maxime voluptatum animi.
+                </p>
+                <ul class="brand-list"> <!--Criando uma lista de itens com imagens, e criando uma classe para poder estilizar no CSS-->
+                    <li><img src="./Logo Nintendo.jpg" alt="Nintendo"/></li> <!--O comando 'Li' serve para adicionar itens na lista criada-->
+                    <li><img src="./Logo Playstation.jpg" alt="Playstation"/></li>
+                    <li><img src="./Logo Xbox.jpg" alt="Nintendo"/></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact"> <!--Criando uma nova seção para CONTATO. Criei um Id para tirar o 'Fale conosco' da lista do li-->
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact-methods"> <!--Criando minha estação. DIV serve para criar qualquer tipo de conteúdo sendo texto ou imagens-->
+                <div> <!--Criando a minha subestação-->
+                    <h3>Fale conosco</h3>
+                    <form> <!--Criando um formulário-->
+                        <input type="text" placeholder="Digite seu nome" required/> <!--O 'REQUIRED' significa que esse campo o preenchimento é obrigatório-->
+                        <input type="email" placeholder="Digite seu email" required/>
+                        <input type="tel" placeholder="Digite seu telefone (opcional)"/>
+                        <textarea placeholder="Escreva sua mensagem..." required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Nos acompanhe</h3>
+                    <ul class="social-links"> <!--Criando uma class para estilizar as imagens no CSS (reduzir de tamamho)-->
+                        <li>
+                            <a href="#" title="Siga-nos no Instagram">
+                                <img src="./Logo do instagram.jpg" alt="Logo do Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no Facebook">
+                                <img src="./Logo do facebook.jpg" alt="Logo do Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visite nosso canal">
+                                <img src="./Logo do youtube.jpg" alt="Logo do youtube">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Venha até nós</h3>
+                    <p>
+                        Rua Javascript, N° 124, Vila HTML - Salvador -BA
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Criando a seção de rodapé da página-->
+    <footer>
+        <div class="container"> <!--Para centralizar o conteúdo-->
+            <p>
+                &copf; Games Shop - Todos os direitos reservados - 2023
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
